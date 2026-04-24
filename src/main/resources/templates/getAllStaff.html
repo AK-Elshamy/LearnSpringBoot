@@ -20,6 +20,9 @@
           <td th:text="${staff.name}"></td>
           <td th:text="${staff.title}"></td>
           <td th:text="${staff.salary}"></td>
+          <td>
+            <a role="button" th:href="@{/(id=${staff.id})}"> Update </a>
+          </td>
         </tr>
       </tbody>
     </table>

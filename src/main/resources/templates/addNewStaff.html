@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" type="text/css" th:href="@{/style.css}" />
   </head>
+
   <body>
     <h1>Add New Staff</h1>
 
@@ -12,14 +13,31 @@
       th:action="@{/addSubmitForm}"
     >
       <label for="staffName">Staff Name:</label>
-      <input type="text" id="staffName" th:field="*{name}" />
+      <input
+        type="text"
+        id="staffName"
+        th:field="*{name}"
+        placeholder="StaffName"
+      />
       <br /><br />
       <label for="staffTitle">Staff Title:</label>
-      <input type="text" id="staffTitle" th:field="*{title}" />
+      <input
+        type="text"
+        id="staffTitle"
+        th:field="*{title}"
+        placeholder="StaffTitle"
+      />
       <br /><br />
       <label for="staffSalary">Staff Salary:</label>
-      <input type="text" id="staffSalary" th:field="*{salary}" />
+      <input
+        type="text"
+        id="staffSalary"
+        th:field="*{salary}"
+        placeholder="StaffSalary"
+      />
       <br /><br />
+
+      <input type="hidden" th:field="*{id}" />
       <button type="submit">Submit</button>
     </form>
   </body>
