@@ -4,6 +4,9 @@
     <link rel="stylesheet" type="text/css" th:href="@{/style.css}" />
   </head>
   <body>
+    <h3>
+      <a th:href="@{/}">Go To Home Page</a>
+    </h3>
     <h1>Staff Details</h1>
 
     <table>
@@ -20,6 +23,9 @@
           <td th:text="${staff.name}"></td>
           <td th:text="${staff.title}"></td>
           <td th:text="${staff.salary}"></td>
+          <td>
+            <a role="button" th:href="@{/(id=${staff.id})}"> Update </a>
+          </td>
         </tr>
       </tbody>
     </table>
