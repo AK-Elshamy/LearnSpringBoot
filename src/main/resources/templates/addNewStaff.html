@@ -5,7 +5,10 @@
   </head>
 
   <body>
-    <h1>Add New Staff</h1>
+    <h3><a th:href="@{/}">AddNewStaff</a></h3>
+    <br /><br />
+    <h3><a th:href="@{/getAllStaff}">GetAllStaff</a></h3>
+    <h1>Home Page</h1>
 
     <form
       method="post"
@@ -13,6 +16,7 @@
       th:action="@{/addSubmitForm}"
     >
       <label for="staffName">Staff Name:</label>
+      <p style="color: red" th:errors="*{name}"></p>
       <input
         type="text"
         id="staffName"
@@ -21,6 +25,7 @@
       />
       <br /><br />
       <label for="staffTitle">Staff Title:</label>
+      <p style="color: red" th:errors="*{title}"></p>
       <input
         type="text"
         id="staffTitle"

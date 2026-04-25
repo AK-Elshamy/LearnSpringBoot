@@ -2,8 +2,12 @@ package com.cwe.crud;
 
 import java.util.UUID;
 
+import jakarta.validation.constraints.NotBlank;
+
 public class Staff {
+    @NotBlank(message = "Name is required")
     private String name;
+    @NotBlank(message = "Title is required")
     private String title;
     private double salary;
     private String id;
