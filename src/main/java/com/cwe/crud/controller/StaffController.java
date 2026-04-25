@@ -19,8 +19,6 @@ import org.springframework.validation.BindingResult;
 @Controller
 public class StaffController {
 
-    // StaffRepo staffRepo = new StaffRepo();
-
     StaffService staffService = new StaffService();
 
     @GetMapping("/")
