@@ -3,8 +3,11 @@ package com.cwe.crud.repository;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.cwe.crud.Staff;
 
+@Repository
 public class StaffRepo {
     private List<Staff> allstaff = new ArrayList<>();
 
