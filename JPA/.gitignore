@@ -1,0 +1,80 @@
+# Maven build files (compiled code)
+target/
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven wrapper (keep the wrapper scripts, ignore the downloaded JAR)
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Log files
+*.log
+logs/
+
+# IDE files
+### STS (Eclipse) ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### NetBeans ###
+/nbproject/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+*.code-workspace
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.tmp
+
+# Spring Boot specific
+application-local.properties
+application-dev.properties
+*.pid
+dump.rdb
+
+# Testing
+**/test-output/
+**/surefire-reports/
+**/failsafe-reports/
+
+# Backup files
+*.bak
+*.orig
+*.swp
+*~
+
+# Your specific files to ignore
+HELP.md  # Since you have HELP.md in rootHELP.md
