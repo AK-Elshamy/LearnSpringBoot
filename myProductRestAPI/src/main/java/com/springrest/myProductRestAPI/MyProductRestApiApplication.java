@@ -8,6 +8,8 @@ public class MyProductRestApiApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MyProductRestApiApplication.class, args);
+	
+	
 	}
 
 }
