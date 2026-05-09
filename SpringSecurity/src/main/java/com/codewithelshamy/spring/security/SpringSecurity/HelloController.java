@@ -11,4 +11,9 @@ public class HelloController {
         return "Spring Security 3aoooo!";
     }
 
+    @GetMapping("/hi")
+    public String sayHi() {
+        return "Hi, Ahmed! Welcome to Spring Security!";
+    }
+
 }
